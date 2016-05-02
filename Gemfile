@@ -56,3 +56,5 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'sprockets', '2.11.0'
 
 gem 'simple_form'
+
+gem 'devise'
