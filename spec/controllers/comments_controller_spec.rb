@@ -9,7 +9,7 @@ RSpec.describe CommentsController, type: :controller do
          post :create, gram_id: p.id, comment: {message: 'awesome gram'}
          expect(response).to redirect_to root_path
          expect(p.comments.length).to eq 1
-         expect(p.comment.first.message).to eq "awesome gram"
+         expect(p.comments.first.message).to eq "awesome gram"
       end
       
       it "should require a user to be logged in to comment on a gram" do 
